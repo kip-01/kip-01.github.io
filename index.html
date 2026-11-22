@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiprop Haggai | Climate resilience and community development, Kenya</title>
+<meta name="description" content="Kiprop Haggai is a community development practitioner in Kenya with six years of work in climate resilience, peacebuilding, WASH and disability inclusion, and environmental compliance.">
+<meta property="og:title" content="Kiprop Haggai | Climate resilience and community development">
+<meta property="og:description" content="Livelihoods, peacebuilding, inclusive WASH and environmental compliance across Kenya's drylands.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0d4d43">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Kiprop Haggai","address":{"@type":"PostalAddress","addressLocality":"Kakamega","addressCountry":"KE"},"alumniOf":"Maseno University","sameAs":["https://medium.com/@kiprop"]}
+</script>
+<style>
+:root{
+  --bg:#eef1ec; --surface:#fbfcf9; --ink:#10231c; --muted:#4c5e55; --line:#cfd8cf;
+  --accent:#0d4d43; --accent-ink:#ffffff; --water:#0f7c8a; --grass:#c99a22;
+  --contour:13,77,67;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --text:"Source Serif 4",Georgia,serif;
+  --radius:10px;
+}
+:root[data-theme="dark"]{
+  --bg:#0a1512; --surface:#11201b; --ink:#e7eee8; --muted:#9db0a6; --line:#223a31;
+  --accent:#63d1b8; --accent-ink:#06201a; --water:#58b7c4; --grass:#e0b53e;
+  --contour:99,209,184;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:1.125rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--water)}
+:focus-visible{outline:3px solid var(--water);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;letter-spacing:-0.02em}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800}
+h3{font-size:1.25rem;font-weight:600;letter-spacing:-0.01em}
+p{margin:0 0 1em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* nav */
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:20px;height:60px}
+.brand{font-family:var(--display);font-weight:800;font-size:1.05rem;text-decoration:none;color:var(--ink);margin-right:auto}
+.nav a.link{font-family:var(--display);font-size:.95rem;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 2px;border-bottom:2px solid transparent}
+.nav a.link:hover{color:var(--ink)}
+.nav a.link.on{color:var(--ink);border-color:var(--grass)}
+.icon-btn{font-family:var(--display);font-weight:600;font-size:.9rem;background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.icon-btn:hover{border-color:var(--accent)}
+@media(max-width:760px){.nav a.link{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+#terrain{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 82%,transparent) 42%,transparent 78%);pointer-events:none}
+.hero .wrap{position:relative;z-index:2;padding-top:clamp(64px,12vw,140px);padding-bottom:clamp(64px,10vw,120px)}
+.hero h1{font-size:clamp(3.2rem,10vw,7.4rem);font-weight:800;letter-spacing:-0.04em;line-height:.92}
+.hero .lede{max-width:34ch;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.4;margin:28px 0 22px}
+.hero .where{font-family:var(--display);font-weight:600;color:var(--muted);margin-bottom:30px;max-width:46ch;font-size:1rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font-family:var(--display);font-weight:600;font-size:1rem;display:inline-block;padding:12px 22px;border-radius:999px;text-decoration:none;border:1.5px solid var(--accent);cursor:pointer}
+.btn.fill{background:var(--accent);color:var(--accent-ink)}
+.btn.fill:hover{background:var(--water);border-color:var(--water);color:#fff}
+.btn.line{background:transparent;color:var(--accent)}
+.btn.line:hover{background:var(--accent);color:var(--accent-ink)}
+.hint{position:absolute;right:24px;bottom:16px;z-index:2;font-family:var(--display);font-size:.8rem;color:var(--muted)}
+@media(max-width:760px){.hint{display:none}.hero::after{background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 70%,transparent),var(--bg) 95%)}}
+
+section.block{padding:clamp(64px,9vw,112px) 0;border-bottom:1px solid var(--line)}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:32px;margin-bottom:48px;align-items:end}
+.head p{color:var(--muted);margin:0;max-width:52ch}
+@media(max-width:760px){.head{grid-template-columns:1fr;gap:14px}}
+
+/* results */
+.ledger{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px}
+.ledger li{display:grid;grid-template-columns:minmax(120px,170px) 1fr;gap:20px;align-items:baseline;padding:22px 0;border-top:1px solid var(--line)}
+.ledger .n{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,4.4vw,3.2rem);letter-spacing:-0.03em;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.ledger .t{margin:0;font-size:1rem;line-height:1.5}
+.ledger .t small{display:block;color:var(--muted);font-family:var(--display);font-size:.85rem;margin-top:4px}
+@media(max-width:900px){.ledger{grid-template-columns:1fr}}
+
+/* experience */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
+.chip{font-family:var(--display);font-weight:600;font-size:.92rem;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 16px;cursor:pointer;transition:background .15s,border-color .15s}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.timeline{position:relative;margin:0;padding:0;list-style:none}
+.timeline::before{content:"";position:absolute;left:182px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--line),var(--line))}
+.role{display:grid;grid-template-columns:150px 1fr;gap:64px;position:relative;padding:0 0 52px;transition:opacity .25s}
+.role::before{content:"";position:absolute;left:177px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--accent);transition:border-color .2s,transform .2s}
+.role.dim{opacity:.28}
+.role.flash::before{border-color:var(--grass);transform:scale(1.5)}
+.role .when{font-family:var(--display);font-weight:600;font-size:.95rem;color:var(--muted);padding-top:3px;line-height:1.35}
+.role .when b{display:block;color:var(--ink);font-weight:800}
+.role h3{margin-bottom:2px}
+.role .org{font-family:var(--display);font-weight:600;color:var(--water);margin:0 0 14px;font-size:1rem}
+.role .org span{display:block;color:var(--muted);font-weight:400;font-size:.92rem}
+.role ul{margin:0 0 10px;padding-left:1.1em}
+.role li{margin-bottom:.45em;max-width:68ch}
+.role li::marker{color:var(--grass)}
+.more{display:none}
+.role.open .more{display:list-item}
+.toggle{font-family:var(--display);font-weight:600;font-size:.92rem;background:none;border:none;color:var(--accent);cursor:pointer;padding:4px 0;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){
+  .timeline::before{left:7px}
+  .role{grid-template-columns:1fr;gap:6px;padding-left:34px}
+  .role::before{left:2px}
+}
+
+/* skills */
+.skills{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:48px;align-items:start}
+.skill-list{display:flex;flex-wrap:wrap;gap:10px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;min-height:260px;position:sticky;top:84px}
+.panel h3{margin-bottom:14px}
+.panel ul{margin:0;padding:0;list-style:none}
+.panel li{padding:12px 0;border-top:1px solid var(--line);font-size:1rem;line-height:1.5}
+.panel li:first-child{border-top:none;padding-top:0}
+.panel li a{font-family:var(--display);font-weight:600;font-size:.88rem;display:block;margin-bottom:2px}
+.panel .empty{color:var(--muted);font-size:1rem;margin:0}
+@media(max-width:900px){.skills{grid-template-columns:1fr}.panel{position:static}}
+
+/* writing */
+.media{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.media a.item{display:block;text-decoration:none;color:var(--ink);border-top:3px solid var(--accent);padding-top:16px}
+.media a.item:hover{border-color:var(--grass)}
+.media .k{font-family:var(--display);font-size:.9rem;font-weight:600;color:var(--water)}
+.media h3{margin:6px 0 8px}
+.media p{font-size:1rem;color:var(--muted);margin:0}
+.titles{margin:36px 0 0;padding:0;list-style:none;font-size:1rem}
+.titles li{padding:10px 0;border-top:1px solid var(--line);font-style:italic}
+@media(max-width:900px){.media{grid-template-columns:1fr}}
+
+/* credentials */
+.creds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px}
+.creds h3{margin-bottom:16px}
+.creds dl{margin:0}
+.creds dt{font-family:var(--display);font-weight:600}
+.creds dd{margin:0 0 16px;color:var(--muted);font-size:1rem}
+@media(max-width:760px){.creds{grid-template-columns:1fr;gap:32px}}
+
+/* contact */
+.contact{padding:clamp(64px,9vw,112px) 0}
+.contact h2{max-width:16ch;margin-bottom:20px}
+.contact p{max-width:48ch;color:var(--muted)}
+.mail{font-family:var(--display);font-weight:800;font-size:clamp(1.3rem,3.6vw,2.2rem);letter-spacing:-0.02em;word-break:break-all;margin:8px 0 24px}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;font-family:var(--display);font-size:.88rem;color:var(--muted)}
+.toast{font-family:var(--display);font-weight:600;font-size:.9rem;color:var(--accent);margin-left:12px}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Kiprop Haggai</a>
+    <a class="link" href="#results">Results</a>
+    <a class="link" href="#experience">Experience</a>
+    <a class="link" href="#skills">Skills</a>
+    <a class="link" href="#writing">Writing</a>
+    <a class="link" href="#credentials">Credentials</a>
+    <a class="link" href="#contact">Contact</a>
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme">Dark mode</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Introduction">
+    <canvas id="terrain" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <h1>Kiprop<br>Haggai</h1>
+      <p class="lede">I help dryland communities in Kenya adapt to climate pressure, settle disputes over land and water, and build livelihoods that hold up in a bad year.</p>
+      <p class="where">Based in Kakamega, Kenya. Open to project coordination and programme roles in resilience, peacebuilding and environmental compliance.</p>
+      <div class="btns">
+        <a class="btn fill" href="#experience">See my experience</a>
+        <a class="btn line" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="hint">Move your cursor over the page background to raise the terrain</div>
+  </section>
+
+  <section class="block" id="results">
+    <div class="wrap">
+      <div class="head">
+        <h2>What the work produced</h2>
+        <p>Figures from my programme records and reports. Most come from four years leading the Kenya4Resilience Consortium in Samburu County.</p>
+      </div>
+      <ul class="ledger">
+        <li><span class="n" data-count="5000" data-suffix="+">5,000+</span><p class="t">households reached by livelihood and resilience programmes in Samburu County<small>Kenya4Resilience Consortium</small></p></li>
+        <li><span class="n" data-count="45" data-suffix="%">45%</span><p class="t">fall in conflict incidents in target areas, after 18 peacebuilding and cross-border dialogue forums<small>Kenya4Resilience Consortium</small></p></li>
+        <li><span class="n" data-count="317">317</span><p class="t">weapons surrendered in voluntary disarmament in Wamba sub-county<small>Kenya4Resilience Consortium</small></p></li>
+        <li><span class="n" data-count="800" data-suffix="+">800+</span><p class="t">smallholders linked to input suppliers, off-takers and local traders<small>Kenya4Resilience Consortium</small></p></li>
+        <li><span class="n" data-count="1200" data-suffix="+">1,200+</span><p class="t">agropastoral households reached, with 20 savings and loan groups, producer groups and community organisations formed<small>Mseto Resilience WASH and Food Security Project</small></p></li>
+        <li><span class="n" data-count="7">7</span><p class="t">households relocated and compensated through cash payments and new homes on titled land<small>TerraOre Mineral Resources</small></p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="wrap">
+      <div class="head">
+        <h2>Experience</h2>
+        <p>Filter by the kind of work you care about. Open an entry to read the full detail.</p>
+      </div>
+
+      <div class="filters" id="filters" role="group" aria-label="Filter experience by theme">
+        <button class="chip" type="button" data-f="all" aria-pressed="true">All work</button>
+        <button class="chip" type="button" data-f="climate" aria-pressed="false">Climate and livelihoods</button>
+        <button class="chip" type="button" data-f="peace" aria-pressed="false">Peace and conflict sensitivity</button>
+        <button class="chip" type="button" data-f="wash" aria-pressed="false">WASH and inclusion</button>
+        <button class="chip" type="button" data-f="env" aria-pressed="false">Environment and compliance</button>
+        <button class="chip" type="button" data-f="ops" aria-pressed="false">Enterprise and operations</button>
+      </div>
+
+      <ol class="timeline" id="timeline">
+
+        <li class="role" id="role-terraheal" data-tags="ops">
+          <div class="when"><b>Jun 2026 to now</b>Contract</div>
+          <div>
+            <h3>Pharmacy Operations Manager</h3>
+            <p class="org">TerraHeal Pharmaceuticals Ltd<span>Kakamega</span></p>
+            <ul>
+              <li>Built the pharmacy from set-up to trading: found the premises, planned the interior layout and stocked the shop.</li>
+              <li>Set up inventory control for more than 800 product lines, tracking stock levels, expiry dates and stock-outs.</li>
+              <li>Led sales and supply of medicines to county government hospitals.</li>
+              <li class="more">Handled logistics and procurement, comparing supplier quotations and buying from licensed distributors.</li>
+              <li class="more">Supplied medicines for a health outreach organised by the Anglican Church of Kenya.</li>
+              <li class="more">Administered the pharmacy's management systems, ran staff payroll, held banking authorisation for the business account and handled all KRA documentation.</li>
+            </ul>
+            <button class="toggle" type="button" aria-expanded="false">Show more</button>
+          </div>
+        </li>
+
+        <li class="role" id="role-terraore" data-tags="env">
+          <div class="when"><b>Jun 2024 to Nov 2025</b></div>
+          <div>
+            <h3>CSR, Environmental and Community Relations Coordinator</h3>
+            <p class="org">TerraOre Mineral Resources Ltd<span>Ikolomani, Kakamega County</span></p>
+            <ul>
+              <li>Led community engagement for a minerals leaching plant from first contact to start-up, mapping affected households, local leaders and community groups.</li>
+              <li>Built the phased relocation appraisal for seven affected households and coordinated their compensation through cash payments and new houses on purchased, titled land.</li>
+              <li>Supported the NEMA Environmental Impact Assessment for the Molowa plant (licence NEMA/EIA/PSL/32674, issued 29 May 2024) and followed up its licence conditions.</li>
+              <li class="more">Registered the company with the Ministry of Mining.</li>
+              <li class="more">Represented the Ikolomani Youth Cooperative at a Ministry of Mining stakeholders' workshop chaired by the Principal Secretary in January 2025.</li>
+              <li class="more">Kept working relationships open with host community members, local leaders and government offices, and reported progress to company management.</li>
+            </ul>
+            <button class="toggle" type="button" aria-expanded="false">Show more</button>
+          </div>
+        </li>
+
+        <li class="role" id="role-k4rc" data-tags="climate peace env">
+          <div class="when"><b>Jul 2020 to May 2024</b></div>
+          <div>
+            <h3>Project Coordinator</h3>
+            <p class="org">Kenya4Resilience Consortium (K4RC)<span>Wamba, Samburu County. Partners: Children's Mission Africa, The Salvation Army, Life and Peace Institute, International Aid Services</span></p>
+            <ul>
+              <li>Led livelihood and resilience programmes that reached more than 5,000 pastoralist and agropastoral households.</li>
+              <li>Ran 18 peacebuilding and cross-border dialogue forums with more than 450 participants, including Samburu Morans and security agencies. Conflict incidents in target areas fell by 45%.</li>
+              <li>Led voluntary disarmament work in Wamba sub-county, with 317 weapons surrendered.</li>
+              <li>Made sure women and youth made up more than 60% of active participants and leadership members.</li>
+              <li class="more">Set up agroecological demonstration plots and trained grazing committees and conservancies in pasture regeneration and fodder banking.</li>
+              <li class="more">Linked farmer groups to input suppliers, off-takers and local traders, improving market access for 800+ smallholders.</li>
+              <li class="more">Applied Social and Environmental Impact Assessment methods to guide risk mitigation across consortium work.</li>
+              <li class="more">Led 7 health outreaches with Wamba Level IV Hospital and AMREF, reaching about 300 households.</li>
+              <li class="more">Tracked results with KoboCollect and Power BI. Wrote donor reports, outcome maps and 17 impact stories.</li>
+              <li class="more">Produced more than 15 infographics and videos that the Tana River and Turkana chapters reused.</li>
+            </ul>
+            <button class="toggle" type="button" aria-expanded="false">Show more</button>
+          </div>
+        </li>
+
+        <li class="role" id="role-mseto" data-tags="climate wash peace">
+          <div class="when"><b>Oct 2018 to Jun 2020</b></div>
+          <div>
+            <h3>WASH and Livelihoods Project Officer</h3>
+            <p class="org">Mseto Resilience WASH and Food Security Project, The Salvation Army<span>Nairobi, Kitui, Machakos, Isiolo, Makueni and Samburu</span></p>
+            <ul>
+              <li>Coordinated WASH and livelihood work that reached more than 1,200 agropastoral households in the project counties.</li>
+              <li>Supported disability inclusion in special needs institutions, including Salvation Army Joytown, Thika High School for the Blind and Variety Village. Work covered accessible ablution blocks, pathways, kitchens and water harvesting systems.</li>
+              <li>Formed and trained 20 village savings and loan associations, producer groups and community organisations.</li>
+              <li class="more">Delivered child protection, safeguarding and health promotion training for teachers, caregivers and learners.</li>
+              <li class="more">Managed a commercial demonstration farm showing drip irrigation, soil moisture conservation, integrated pest management and mixed crop and livestock systems.</li>
+              <li class="more">Ran gender-responsive livelihood work in poultry, kitchen gardening, beekeeping and basketry.</li>
+              <li class="more">Built conflict sensitivity into programme design, supporting joint management of grazing land and water between neighbouring communities.</li>
+            </ul>
+            <button class="toggle" type="button" aria-expanded="false">Show more</button>
+          </div>
+        </li>
+
+        <li class="role" id="role-kmfri" data-tags="climate">
+          <div class="when"><b>Apr to Aug 2016</b></div>
+          <div>
+            <h3>Extension Officer</h3>
+            <p class="org">Kenya Marine and Fisheries Research Institute<span>Sagana, Kirinyaga County</span></p>
+            <ul>
+              <li>Organised fish farmer groups that mobilised more than KES 500,000 and financed 7 micro-enterprises.</li>
+              <li>Ran 6 business incubation workshops and value addition training for more than 80 fish farmers. Group income rose by 45%.</li>
+              <li class="more">Designed aquaculture extension on pond management and fish deworming, which raised production efficiency by 30%.</li>
+            </ul>
+            <button class="toggle" type="button" aria-expanded="false">Show more</button>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <div class="wrap">
+      <div class="head">
+        <h2>What I can do, and where I did it</h2>
+        <p>Pick a skill to see the roles and results behind it. Each link jumps to that role.</p>
+      </div>
+      <div class="skills">
+        <div class="skill-list" id="skillList" role="group" aria-label="Skills"></div>
+        <aside class="panel" id="panel" aria-live="polite">
+          <p class="empty">Choose a skill on the left.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="writing">
+    <div class="wrap">
+      <div class="head">
+        <h2>Writing and field media</h2>
+        <p>I document programme results so other teams can reuse them. These are public.</p>
+      </div>
+      <div class="media">
+        <a class="item" href="https://medium.com/@kiprop" target="_blank" rel="noopener">
+          <span class="k">Articles on Medium</span>
+          <h3>Climate adaptation and resilience</h3>
+          <p>Essays on climate narratives, dryland farming and women's leadership.</p>
+        </a>
+        <a class="item" href="https://youtu.be/I3XqEDcZWGo?si=SeDhqtgcTgK1DXaJ" target="_blank" rel="noopener">
+          <span class="k">Documentary</span>
+          <h3>Kenya4Resilience Consortium</h3>
+          <p>A film on community resilience work in Samburu County.</p>
+        </a>
+        <a class="item" href="https://youtu.be/ghBy5MKxOOc?si=Ir4fANalb6Pn1BrJ" target="_blank" rel="noopener">
+          <span class="k">Documentary</span>
+          <h3>Kenya4Resilience Community of Practice</h3>
+          <p>How partners share lessons across counties.</p>
+        </a>
+      </div>
+      <ul class="titles">
+        <li>Global Climate Change: Has the Narrative Changed?</li>
+        <li>Farming in ASAL Areas: A Story of Mr. Murungi</li>
+        <li>Leadership Under Women</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="credentials">
+    <div class="wrap">
+      <div class="head">
+        <h2>Education and credentials</h2>
+        <p>Licensed with NEMA as an Associate Expert, with ongoing study in conflict sensitivity.</p>
+      </div>
+      <div class="creds">
+        <div>
+          <h3>Education</h3>
+          <dl>
+            <dt>Diploma in Conflict Sensitivity in Community Development</dt>
+            <dd>Campus Køge, Denmark. 2025 to 2027, in progress</dd>
+            <dt>Diploma in Social and Environmental Impact Assessment</dt>
+            <dd>Africa Waste Management Company Ltd. 2018</dd>
+            <dt>BSc Aquatic Resources Conservation and Development with IT</dt>
+            <dd>Maseno University. 2017</dd>
+          </dl>
+        </div>
+        <div>
+          <h3>Licence and training</h3>
+          <dl>
+            <dt>NEMA Licensed Associate Expert</dt>
+            <dd>Registration EIA-MP/153/2018, through the Environmental Institute of Kenya</dd>
+            <dt>Peacebuilding, Conflict Analysis and Disaster Risk Reduction</dt>
+            <dd>2024</dd>
+            <dt>Conflict Sensitivity</dt>
+            <dd>2023</dd>
+            <dt>Adaptive Management</dt>
+            <dd>2022</dd>
+            <dt>Outcome Mapping and Outcome Harvesting</dt>
+            <dd>2021</dd>
+            <dt>Child Protection, Safeguarding and PSEA</dt>
+            <dd>Salvation Army and K4RC, 2020</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Let's talk about your project</h2>
+      <p>I'm available for roles in project coordination, resilience and livelihoods, conflict-sensitive programming, and environmental and social compliance. References are available on request.</p>
+      <div class="mail"><a href="mailto:kiprophaggai01@gmail.com?subject=Hello%20Kiprop">kiprophaggai01@gmail.com</a></div>
+      <div class="btns">
+        <a class="btn fill" href="mailto:kiprophaggai01@gmail.com?subject=Hello%20Kiprop">Send an email</a>
+        <button class="btn line" id="copy" type="button">Copy email address</button><span class="toast" id="toast" role="status"></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Kiprop Haggai, Kakamega, Kenya. This site is plain HTML, CSS and JavaScript and collects no visitor data.</div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* theme */
+  var themeBtn=document.getElementById('theme');
+  function safeGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  function safeSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  function applyTheme(t){root.setAttribute('data-theme',t);themeBtn.textContent=t==='dark'?'Light mode':'Dark mode';safeSet('kh-theme',t);if(window.__redraw)window.__redraw()}
+  var saved=safeGet('kh-theme');
+  applyTheme(saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+  themeBtn.addEventListener('click',function(){applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark')});
+
+  /* expandable roles */
+  document.querySelectorAll('.role .toggle').forEach(function(b){
+    b.addEventListener('click',function(){
+      var r=b.closest('.role');var open=r.classList.toggle('open');
+      b.setAttribute('aria-expanded',open);b.textContent=open?'Show less':'Show more';
+    });
+  });
+
+  /* experience filter */
+  var roles=[].slice.call(document.querySelectorAll('.role'));
+  var chips=[].slice.call(document.querySelectorAll('#filters .chip'));
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      var f=c.getAttribute('data-f');
+      chips.forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+      roles.forEach(function(r){
+        var hit=f==='all'||r.getAttribute('data-tags').split(' ').indexOf(f)>-1;
+        r.classList.toggle('dim',!hit);
+      });
+    });
+  });
+
+  /* skills explorer */
+  var skills=[
+    {n:'Livelihoods and resilience',e:[
+      ['k4rc','Reached more than 5,000 pastoralist and agropastoral households with climate-smart livelihood support.'],
+      ['mseto','Reached 1,200+ agropastoral households and improved income security across five counties.'],
+      ['kmfri','Organised fish farmer groups that mobilised KES 500,000+ and financed 7 micro-enterprises.']]},
+    {n:'Climate-smart agriculture',e:[
+      ['k4rc','Set up agroecological demonstration plots, and trained grazing committees in pasture regeneration and fodder banking.'],
+      ['mseto','Managed a demonstration farm showing drip irrigation, soil moisture conservation and integrated pest management.']]},
+    {n:'Peacebuilding and conflict sensitivity',e:[
+      ['k4rc','18 dialogue forums with 450+ participants. Conflict incidents fell 45% and 317 weapons were surrendered.'],
+      ['mseto','Built conflict sensitivity into programme design for shared grazing and water.']]},
+    {n:'WASH and disability inclusion',e:[
+      ['mseto','Coordinated accessible ablution blocks, pathways, kitchens and water harvesting at Joytown, Thika High School for the Blind and Variety Village.'],
+      ['mseto','Delivered child protection and safeguarding training for teachers, caregivers and learners.']]},
+    {n:'Environmental and social compliance',e:[
+      ['terraore','Supported the NEMA EIA for a gold leaching plant and followed up its licence conditions.'],
+      ['k4rc','Used Social and Environmental Impact Assessment methods to guide risk mitigation across consortium work.']]},
+    {n:'Community and stakeholder engagement',e:[
+      ['terraore','Mapped affected households, leaders and groups. Relocated and compensated seven households.'],
+      ['terraore','Represented a youth cooperative at a Ministry of Mining stakeholders\' workshop in January 2025.'],
+      ['k4rc','Worked with county partners, security agencies, health facilities and community groups.']]},
+    {n:'Monitoring, evaluation and learning',e:[
+      ['k4rc','Tracked results with KoboCollect and Power BI, and wrote donor reports and outcome maps.'],
+      ['k4rc','Documented 17 impact stories from direct beneficiaries.']]},
+    {n:'Financial inclusion and markets',e:[
+      ['mseto','Formed and trained 20 savings and loan associations, producer groups and community organisations.'],
+      ['k4rc','Linked 800+ smallholders to input suppliers, off-takers and local traders.']]},
+    {n:'Knowledge products and storytelling',e:[
+      ['k4rc','Produced 15+ infographics and videos, reused by chapters in Tana River and Turkana.']]},
+    {n:'Operations and procurement',e:[
+      ['terraheal','Set up inventory for 800+ product lines and compared supplier quotations for licensed procurement.'],
+      ['terraheal','Handled payroll, banking authorisation and KRA documentation.']]}
+  ];
+  var names={terraheal:'TerraHeal Pharmaceuticals',terraore:'TerraOre Mineral Resources',k4rc:'Kenya4Resilience Consortium',mseto:'Mseto Resilience Project',kmfri:'KMFRI'};
+  var list=document.getElementById('skillList'),panel=document.getElementById('panel');
+  skills.forEach(function(s,i){
+    var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=s.n;b.setAttribute('aria-pressed','false');
+    b.addEventListener('click',function(){
+      [].forEach.call(list.children,function(x){x.setAttribute('aria-pressed',x===b)});
+      var h='<h3>'+s.n+'</h3><ul>';
+      s.e.forEach(function(e){h+='<li><a href="#role-'+e[0]+'" data-role="'+e[0]+'">'+names[e[0]]+'</a>'+e[1]+'</li>'});
+      panel.innerHTML=h+'</ul>';
+    });
+    list.appendChild(b);
+  });
+  panel.addEventListener('click',function(ev){
+    var a=ev.target.closest('a[data-role]');if(!a)return;
+    var r=document.getElementById('role-'+a.getAttribute('data-role'));
+    r.classList.add('flash');setTimeout(function(){r.classList.remove('flash')},1600);
+  });
+  list.children[2].click();
+
+  /* copy email */
+  var toast=document.getElementById('toast');
+  document.getElementById('copy').addEventListener('click',function(){
+    var t='kiprophaggai01@gmail.com';
+    function done(m){toast.textContent=m;setTimeout(function(){toast.textContent=''},2200)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){done('Copied')},function(){done('Select the address above to copy it')})}
+    else{done('Select the address above to copy it')}
+  });
+
+  /* scrollspy */
+  var links={};[].forEach.call(document.querySelectorAll('.nav a.link'),function(a){links[a.getAttribute('href').slice(1)]=a});
+  if('IntersectionObserver' in window){
+    var spy=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){Object.keys(links).forEach(function(k){links[k].classList.toggle('on',k===e.target.id)})}
+    })},{rootMargin:'-45% 0px -50% 0px'});
+    ['results','experience','skills','writing','credentials','contact'].forEach(function(id){var el=document.getElementById(id);if(el)spy.observe(el)});
+
+    /* count up */
+    var nums=document.querySelectorAll('.n[data-count]');
+    var cu=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return;cu.unobserve(e.target);
+      var el=e.target,end=+el.getAttribute('data-count'),suf=el.getAttribute('data-suffix')||'';
+      if(reduce){return}
+      var t0=null,dur=1100;
+      function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/dur,1),v=Math.round(end*(1-Math.pow(1-p,3)));
+        el.textContent=v.toLocaleString('en-US')+(p<1?'':suf);if(p<1)requestAnimationFrame(step)}
+      requestAnimationFrame(step);
+    })},{threshold:.6});
+    nums.forEach(function(n){cu.observe(n)});
+  }
+
+  /* terrain: contour lines from a drifting height field; the cursor raises a hill */
+  var cv=document.getElementById('terrain'),ctx=cv.getContext('2d');
+  var hero=cv.parentElement,W=0,H=0,dpr=1,cell=16,cols=0,rows=0,field=null;
+  var mx=0.72,my=0.4,tx=0.72,ty=0.4,running=false,time=0,visible=true;
+  var levels=[];for(var l=-1.4;l<=1.6;l+=0.2)levels.push(+l.toFixed(2));
+  var SEG={1:[[3,2]],2:[[2,1]],3:[[3,1]],4:[[0,1]],5:[[0,1],[3,2]],6:[[0,2]],7:[[0,3]],8:[[0,3]],9:[[0,2]],10:[[0,3],[1,2]],11:[[0,1]],12:[[3,1]],13:[[2,1]],14:[[3,2]]};
+  function size(){
+    dpr=Math.min(window.devicePixelRatio||1,2);
+    W=hero.clientWidth;H=hero.clientHeight;
+    cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    cell=W<700?18:15;cols=Math.ceil(W/cell)+1;rows=Math.ceil(H/cell)+1;
+    field=new Float32Array(cols*rows);
+  }
+  function compute(){
+    var asp=W/H;
+    for(var j=0;j<rows;j++){for(var i=0;i<cols;i++){
+      var x=i/cols*asp*3.2,y=j/rows*3.2;
+      var v=0.55*Math.sin(x*1.25+time*.18+Math.sin(y*.9))+0.5*Math.sin(y*1.1-time*.14+Math.cos(x*.7))+0.35*Math.sin((x+y)*.8+time*.1);
+      var dx=(i/cols-mx)*asp,dy=(j/rows-my);
+      v+=1.7*Math.exp(-(dx*dx+dy*dy)/0.035);
+      field[j*cols+i]=v;
+    }}
+  }
+  function pt(e,i,j,t,a,b,c,d){
+    if(e===0)return[(i+(t-a)/(b-a))*cell,j*cell];
+    if(e===1)return[(i+1)*cell,(j+(t-b)/(c-b))*cell];
+    if(e===2)return[(i+(t-d)/(c-d))*cell,(j+1)*cell];
+    return[i*cell,(j+(t-a)/(d-a))*cell];
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    var rgb=getComputedStyle(root).getPropertyValue('--contour').trim();
+    levels.forEach(function(t,li){
+      var major=li%5===0;
+      ctx.beginPath();
+      for(var j=0;j<rows-1;j++){for(var i=0;i<cols-1;i++){
+        var a=field[j*cols+i],b=field[j*cols+i+1],c=field[(j+1)*cols+i+1],d=field[(j+1)*cols+i];
+        var k=(a>t?8:0)|(b>t?4:0)|(c>t?2:0)|(d>t?1:0);
+        var s=SEG[k];if(!s)continue;
+        for(var q=0;q<s.length;q++){
+          var p1=pt(s[q][0],i,j,t,a,b,c,d),p2=pt(s[q][1],i,j,t,a,b,c,d);
+          ctx.moveTo(p1[0],p1[1]);ctx.lineTo(p2[0],p2[1]);
+        }
+      }}
+      ctx.lineWidth=major?1.6:.8;ctx.strokeStyle='rgba('+rgb+','+(major?.5:.26)+')';ctx.stroke();
+    });
+  }
+  function frame(){
+    mx+=(tx-mx)*.06;my+=(ty-my)*.06;time+=.016;
+    compute();draw();
+    if(running&&visible&&!reduce)requestAnimationFrame(frame);else running=false;
+  }
+  function start(){if(!running&&!reduce){running=true;requestAnimationFrame(frame)}}
+  window.__redraw=function(){if(field){compute();draw()}};
+  size();compute();draw();
+  window.addEventListener('resize',function(){size();compute();draw()});
+  document.addEventListener('pointermove',function(e){
+    var r=hero.getBoundingClientRect();
+    if(e.clientY<r.top||e.clientY>r.bottom)return;
+    tx=(e.clientX-r.left)/r.width;ty=(e.clientY-r.top)/r.height;start();
+  });
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){visible=es[0].isIntersecting;if(visible)start()}).observe(hero);
+  }
+  start();
+})();
+</script>
+</body>
+</html>
